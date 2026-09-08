@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="container mx-auto p-4 bg-white rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold mb-4 text-center">Farmer Assistant</h1>
+        <div id="chat-container" class="mb-4 h-64 overflow-y-auto border border-gray-300 p-2 rounded">
+            <!-- Chat messages will be appended here -->
+        </div>
+        <form hx-post="/ask" hx-target="#chat-container" hx-swap="beforeend" class="flex">
+            <input type="text" name="question" placeholder="Ask your question..." class="flex-grow p-2 border border-gray-300 rounded-l">
+            <button type="submit" class="bg-blue-500 text-white p-2 rounded-r">Send</button>
+        </form>
+    </div>
+
+    <script>
+        document.body.addEventListener('htmx:afterRequest', function(event) {
+            if (event.detail.elt.getAttribute('name') === 'question') {
+                event.detail.elt.value = '';
+                var chatContainer = document.getElementById('chat-container');
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+            }
+        });
+    </script>
+</body>
+</html>

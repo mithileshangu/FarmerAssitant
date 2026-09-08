@@ -1,0 +1,32 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+groq.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Runtime data
+data/
+*.db
+*.dat
+*.bak
+financial_data.json
+scraped_page_*.html
+annotated_screenshot_with_numbers.png
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local credentials/config
+tools/email_config.csv
+Profile.json

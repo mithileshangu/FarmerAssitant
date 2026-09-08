@@ -1,0 +1,6 @@
+{
+  "name": "farmer-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A multilingual AI assistant for farmers using Groq and web search."
+}
