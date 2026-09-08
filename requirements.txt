@@ -5,8 +5,6 @@ httpx<0.28
 numpy==2.1.1
 phidata==2.4.27
 Pillow==10.4.0
-playwright==1.45.1
-pytesseract==0.3.13
 python-dotenv
 streamlit==1.38.0
 typer==0.12.5
