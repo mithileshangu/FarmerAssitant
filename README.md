@@ -4,6 +4,12 @@
 
 > **Current version:** LLM + web-search augmentation. A proper RAG/Agentic RAG architecture is planned for a future version.
 
+## 🚀 Live Demo
+
+👉 **[Try Farmer Assistant](https://farmer-assistantv1.streamlit.app/)**
+
+Experience the multilingual AI assistant and test its web-search capabilities directly in your browser.
+
 ## ✨ Features
 
 - 🤖 LLM-powered agricultural assistant
