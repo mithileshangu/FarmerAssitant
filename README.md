@@ -130,12 +130,7 @@ Farmer-Assistant/
 
 The repository also contains legacy prototype files that are not enabled by the public Streamlit application.
 
-## 🔒 Security
 
-- Credentials are loaded from environment variables.
-- Private profile data and runtime chat history are excluded from Git.
-- High-risk tools are not exposed through the public application.
-- Do not commit API keys, passwords, or private data.
 
 ## 🔮 Roadmap
 
@@ -164,3 +159,11 @@ This is an educational AI project. Agricultural recommendations can depend on cr
 ## 👨‍💻 Author
 
 **Mithilesh A**
+
+Software Developer
+
+---
+
+⭐ If you find Farmer-assitant useful, consider giving the repository a star.
+
+
