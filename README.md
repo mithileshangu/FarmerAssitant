@@ -37,6 +37,19 @@ Web Search   │
 
 Web search is triggered only when the question contains signals such as current/latest prices, weather, market rates, schemes, or recent information.
 
+---
+
+## 🖥️ Screenshots
+
+### 💬 Chat Interface
+
+![Farmer Assistant Chat](docs/screenshots/chat.png)
+
+### 🆕 New Chat & Chat History
+
+![Farmer Assistant History](docs/screenshots/history.png)
+
+---
 ## 🛠️ Tech Stack
 
 - **Python**
